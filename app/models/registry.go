@@ -1,6 +1,4 @@
-package app
-
-import "1.ProjectGo/app/models"
+package models
 
 type Model struct {
 	Model interface{}
@@ -8,16 +6,16 @@ type Model struct {
 
 func RegisterModels() []Model {
 	return []Model{
-		{Model: models.User{}},
-		{Model: models.Address{}},
-		{Model: models.Product{}},
-		{Model: models.ProductImage{}},
-		{Model: models.Section{}},
-		{Model: models.Category{}},
-		{Model: models.Order{}},
-		{Model: models.OrderCustomer{}},
-		{Model: models.OrderItem{}},
-		{Model: models.Pembayaran{}},
-		{Model: models.Shipment{}},
+		{Model: User{}},
+		{Model: Address{}},
+		{Model: Product{}},
+		{Model: ProductImage{}},
+		{Model: Section{}},
+		{Model: Category{}},
+		{Model: Order{}},
+		{Model: OrderItem{}},
+		{Model: OrderCustomer{}},
+		{Model: Payment{}},
+		{Model: Shipment{}},
 	}
 }
